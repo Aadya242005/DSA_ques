@@ -6,7 +6,7 @@ public class Two_D_array {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int[][] arr = new int[n][m];
-        for(int i=0; i<arr.length; i++){
+        for(int i=0; i<arr.length-1; i++){
             for(int j=0; j<arr.length; j++){
                 arr[i][j] = sc.nextInt();
             }
@@ -20,7 +20,7 @@ public class Two_D_array {
       //  System.out.println(arr[1][2]);
     } 
     public static void Display(int[][] arr){
-        for(int i=0; i<arr.length; i++){
+        for(int i=0; i<=arr.length-1; i++){
             for(int j=0; j<arr[0].length;j++){
                 System.out.println(arr[i][j]+" ");
             }

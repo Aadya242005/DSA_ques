@@ -8,8 +8,8 @@ public class Spiral {
     public static void Print(int[][] arr){
         int minr =0;
         int minc = 0;
-        int maxr = arr.length;
-        int maxc = arr[0].length;
+        int maxr = arr.length-1;
+        int maxc = arr[0].length-1;
         int te = arr.length*arr[0].length;
         int c =0;
         while(c<te){
@@ -18,7 +18,7 @@ public class Spiral {
                 c++;
             }
             minr++;
-            for(int i=minr;i<=maxc&& c<te;i++ ){
+            for(int i=minr;i<=maxr&& c<te;i++ ){
                 System.out.println(arr[i][maxc]+" ");
                 c++;
             }

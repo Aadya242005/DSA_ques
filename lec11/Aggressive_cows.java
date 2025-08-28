@@ -4,7 +4,7 @@ public class Aggressive_cows {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t =sc.nextInt();
-        while(t-->0){
+        while(t >0){
             int n = sc.nextInt(); // no of stalls
             int c = sc.nextInt(); // no of cows
             int[] stall = new int[n];
@@ -12,7 +12,8 @@ public class Aggressive_cows {
                 stall[i] = sc.nextInt();
             }
             Arrays.sort(stall);
-            System.out.println(Largest_mini_dist(stall,c));    
+            System.out.println(Largest_mini_dist(stall,c));  
+            t--;  
         }
     }
     public static int Largest_mini_dist(int[] stall, int c){
